@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+	<title>魔王初心者のための魔導教室</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
+	<script src="https://cdn.rawgit.com/mrdoob/three.js/r79/examples/js/loaders/MTLLoader.js"></script>
+	<script src="https://cdn.rawgit.com/mrdoob/three.js/r79/examples/js/loaders/OBJLoader.js"></script>
+	<script src="https://unpkg.com/three@0.85.0/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js" integrity="sha256-VOi2Rul9rvLP88evmfzQ/naNx059RkmPaKhpx9ydyQY=" crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
+</head>
+
+<body>
+	<div id="Container">
+		<header>
+            <p>Geostorm Lv1.0</p>
+    	</header>
+
+		<div id="Content">
+				<nav>
+					<a href="index.html" class="btn-shine"> ◀ 現実へ戻る</a>
+					<br><br>
+
+					魔法の属性<br>
+					<select id="MagicElement" name="MagicElement">
+					<option value="wind">風</option>
+					<option value="fire">火</option>
+					</select>
+					<br><br>
+
+					形状<br>
+					<select id="MagicForm" name="MagicForm">
+					<option value="storm">渦</option>
+					<option value="sphere">玉</option>
+					</select>
+					<br><br>
+					
+					追加エフェクト<br>
+					<select id="SubEffect" name="SubEffect">
+					<option value="fog">塵</option>
+					</select>
+					<br><br>
+
+					Three.js<br>使用メソッド一覧
+					<div id="threeMethods" class="box1">
+					</div>
+					<br><br>
+
+					<!--課題の段階では実装しない-->
+					<!-- 
+					条件<br>
+					<input type="text" size="5" placeholder="数字のみ">秒
+					<select name="CE">
+					<option value="If">if（もし～秒のとき）</option>
+					<option value="For">for（～秒間ずっと）</option>
+					<option value="Inf">while(true)（無限に）</option>
+					</select>
+					-->
+				</nav>
+
+				<main>
+					<canvas id="Canvas"></canvas>
+				</main>
+		</div>
+		<footer>
+			© LevelDrain 2019
+		</footer>
+	</div>
+</body>
+
+</html>
